@@ -1,2 +1,134 @@
-Mon premier fichier hmtl pour git
-Voici ma 2e ligne
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Adrien VIGEANT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Adrien VIGEANT</h1>
+            <p>Bienvenue sur mon portfolio</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#parcours">Parcours</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#motivation">Motivation</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#bts">BTS SIO</a></li>
+                <li><a href="#ecole">École</a></li>
+                <li><a href="#procedures">Procédures</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="parcours" class="card-section">
+            <h2>Parcours Professionnel</h2>
+            <div class="card">
+                <p>Janvier 2022 - Stage d'observation de 3e en boulangerie.</p>
+            </div>
+        </section>
+
+        <section id="competences" class="card-section">
+            <h2>Compétences Techniques</h2>
+            <div class="card">
+                <p>Développement en HTML, CSS, PHP, MySQL et Python.</p>
+            </div>
+        </section>
+
+        <section id="cv" class="card-section">
+            <h2>CV</h2>
+            <a href="CV_Adrien_VIGEANT.pdf" download>
+                <button>Télécharger mon CV</button>
+            </a>
+        </section>
+
+        <section id="motivation" class="card-section">
+            <h2>Lettre de motivation</h2>
+            <div class="card">
+                <p>Actuellement étudiant en BTS SIO, je développe des compétences solides en informatique, aussi bien en développement qu’en administration de systèmes et réseaux. Curieux, rigoureux et motivé, j’aime comprendre comment fonctionnent les technologies et les mettre en pratique à travers des projets concrets.
+
+Au cours de ma formation, j’ai travaillé sur différents projets (sites web, bases de données, programmation), ce qui m’a permis de renforcer mon sens de l’analyse, mon autonomie et ma capacité à résoudre des problèmes techniques.
+
+À travers ce portfolio, je souhaite présenter mon travail, mes compétences et ma motivation à m’investir pleinement dans un environnement professionnel afin de continuer à progresser et à gagner en expérience.
+
+Adrien Vigeant</p>
+            </div>
+        </section>
+
+        <section id="projets" class="card-section">
+            <h2>Projets Informatiques</h2>
+            <div class="card">
+                <p>Développement d'un jeu vidéo 3D en C# sur Unity.</p>
+                <p>Développement d'un jeu de Morpion en Python.</p>
+                <p>Développement et mise en ligne d'un site internet hébergé sur une Machine Virtuelle Ubuntu Server avec gestion d'une base de données pour gérer la création de compte ainsi que la connexion aux sessions.</p>
+            </div>
+        </section>
+
+        <section id="bts" class="card-section">
+            <h2>Résumé du BTS SIO</h2>
+            <div class="card">
+                <p>Le BTS SIO (Services Informatiques aux Organisations) est une formation de 2 ans après le bac qui prépare aux métiers de l’informatique en entreprise.</p>
+                <p>Elle forme à l’administration des systèmes et réseaux ou au développement d’applications, selon l’option choisie (SISR ou SLAM).</p>
+                <p>Les étudiants y apprennent la programmation, les bases de données, la sécurité informatique, la gestion de projets et le support aux utilisateurs.</p>
+                <p>La formation est très professionnalisante, avec des stages en entreprise et permet soit une insertion rapide dans le monde du travail, soit une poursuite d’études.</p>
+                <p><a href="https://www.francecompetences.fr/recherche/rncp/40792/" target="_blank">RÉFÉRENTIEL DU BTS</a></p>
+            </div>
+        </section>
+
+        <section id="ecole" class="card-section">
+            <h2>Site de l'école</h2>
+            <div class="card">
+                <p><a href="https://institutionsaintaspais.fr/campus/" target="_blank">Le lien du Campus Saint Aspais de Melun.</a></p>
+                <p><a href="https://institutionsaintaspais.fr/formations/bts-services-informatiques-aux-organisations-option-slam-et-sisr/" target="_blank">Et le lien de la formation.</a></p>
+            </div>
+        </section>
+
+        <section id="procedures" class="card-section">
+            <h2>Procédures</h2>
+            <div class="procedure-buttons">
+                <a href="Procedure_redirection_NAT.pdf" download><button>Procédure 1</button></a>
+                <a href="Procedure_creation_dossier_partage.pdf" download><button>Procédure 2</button></a>
+                <a href="Procedure_modification_IP.pdf" download><button>Procédure 3</button></a>
+            </div>
+        </section>
+
+        <section id="contact" class="card-section">
+            <h2>Contact</h2>
+            <div class="card">
+                <p>Courriel : adrien.vigeant@orange.fr</p>
+                <p>Téléphone : 06 47 85 97 40</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Adrien VIGEANT</p>
+    </footer>
+    <button id="backToTop" title="Retour en haut">↑</button>
+    <script>
+    const backToTop = document.getElementById("backToTop");
+    window.onscroll = function() 
+    {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) 
+        {
+            backToTop.style.display = "block";
+        } else 
+        {
+            backToTop.style.display = "none";
+        }
+    };
+    backToTop.onclick = function() 
+    {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+</script>
+
+</body>
+</html>
